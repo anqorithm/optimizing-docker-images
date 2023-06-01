@@ -1,0 +1,26 @@
+@base_url = http://localhost:3000
+
+### Get all todos
+GET {{base_url}}/todos
+
+### Create a new todo
+POST {{base_url}}/todos
+Content-Type: application/json
+
+{
+  "text": "Todo 1"
+}
+
+### Get a specific todo
+GET {{base_url}}/todos/:id
+
+### Update a todo
+PUT {{base_url}}/todos/:id
+Content-Type: application/json
+
+{
+  "text": "Updated todo"
+}
+
+### Delete a todo
+DELETE {{base_url}}/todos/:id
